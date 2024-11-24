@@ -1,20 +1,4 @@
-import java.util.Scanner;
-        
-public class prg4 {
-
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        
-       int i;
-       Double d;
-       String s;
-
-        i = scan.nextInt();
-        System.out.println("Int : "+i);
-        i.readLine();
-        // Write your code here.
-     
-        /*
+    /*
         inputs :
             42
             3.1415
@@ -24,6 +8,26 @@ public class prg4 {
             Double: 3.1415
             Int: 42 
         */
+
+import java.util.Scanner;
+        
+public class prg4 {
+
+    public static void main(String[] args) {
+       Scanner scanner = new Scanner(System.in);
+    
+        int intValue = scanner.nextInt(); 
+        double doubleValue = scanner.nextDouble();
+        scanner.nextLine(); 
+        String stringValue = scanner.nextLine();
+
+  
+        System.out.println("String: " + stringValue);
+        System.out.println("Double: " + doubleValue);
+        System.out.println("Int: " + intValue);
+        
+        scanner.close(); 
+    
 
       
     }
